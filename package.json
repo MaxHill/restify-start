@@ -1,39 +1,39 @@
 {
-  "name": "smsblog",
-  "version": "1.0.0",
-  "description": "A proof of concept, let's see where it goes",
-  "main": "index.js",
-  "scripts": {
-    "start": "NODE_ENV=development nodemon",
-    "tunnel": "lt --port 3000 --subdomain smsblog",
-    "test": "NODE_ENV=testing mocha test --timeout 10000",
-    "eslint": "eslint --format 'node_modules/eslint-friendly-formatter' ."
-  },
-  "keywords": [
-    "Fitness"
-  ],
-  "author": "Max Hill",
-  "license": "ISC",
-  "repository": {},
-  "dependencies": {
-    "bunyan-winston-adapter": "^0.2.0",
-    "chai-http": "^3.0.0",
-    "eslint": "^3.19.0",
-    "eslint-config-google": "^0.8.0",
-    "eslint-friendly-formatter": "^3.0.0",
-    "lodash": "^4.17.4",
-    "mongoose": "^4.10.4",
-    "mongoose-createdmodified": "^0.0.2",
-    "mongoose-string-query": "^0.2.5",
-    "nodemon": "^1.11.0",
-    "restify": "^4.3.0",
-    "restify-errors": "^4.3.0",
-    "winston": "^2.3.1"
-  },
-  "devDependencies": {
-    "chai": "^4.0.2",
-    "mocha": "^3.4.2",
-    "sinon": "^2.3.4",
-    "supertest": "^3.0.0"
-  }
+    "name": "Fit",
+    "version": "1.0.0",
+    "description": "A proof of concept, let's see where it goes",
+    "main": "index.js",
+    "scripts": {
+        "start": "NODE_ENV=development nodemon",
+        "tunnel": "lt --port 3000 --subdomain smsblog",
+        "test": "NODE_ENV=testing mocha test --timeout 10000",
+        "eslint": "eslint --format 'node_modules/eslint-friendly-formatter' ."
+    },
+    "keywords": [
+        "Fitness"
+    ],
+    "author": "Max Hill",
+    "license": "ISC",
+    "repository": {},
+    "dependencies": {
+        "bunyan-winston-adapter": "^0.2.0",
+        "chai-http": "^3.0.0",
+        "eslint": "^3.19.0",
+        "eslint-config-google": "^0.8.0",
+        "eslint-friendly-formatter": "^3.0.0",
+        "lodash": "^4.17.4",
+        "mongoose": "^4.10.4",
+        "mongoose-createdmodified": "^0.0.2",
+        "mongoose-string-query": "^0.2.5",
+        "nodemon": "^1.11.0",
+        "restify": "^4.3.0",
+        "restify-errors": "^4.3.0",
+        "winston": "^2.3.1"
+    },
+    "devDependencies": {
+        "chai": "^4.0.2",
+        "mocha": "^3.4.2",
+        "sinon": "^2.3.4",
+        "supertest": "^3.0.0"
+    }
 }
