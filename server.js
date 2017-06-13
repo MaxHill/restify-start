@@ -31,7 +31,7 @@ if (config.env == 'development') {
 /**
  * Initialize Server
  */
-let app = restify.createServer({
+global.app = restify.createServer({
     name: config.name,
     version: config.version,
     log: bunyanWinston.createAdapter(log),
@@ -80,20 +80,7 @@ app.listen(config.port, function() {
             );
         }
 
-        // require('./routes');
-        const TodoController = require('./controllers/todo');
-        app.get('/', function(request, response, next) {
-            response.send('OK');
-            next();
-        });
-        /**
-         * Todo resource
-         */
-        app.post('/todos', TodoController.post);
-        app.get('/todos', TodoController.list);
-        app.get('/todos/:todo_id', TodoController.get);
-        app.put('/todos/:todo_id', TodoController.update);
-        app.del('/todos/:todo_id', TodoController.delete);
+        require('./src/routes');
     });
 
     global.db = mongoose.connect(config.db.uri);

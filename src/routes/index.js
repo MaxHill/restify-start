@@ -4,6 +4,7 @@ app.get('/', function(request, response, next) {
     response.send('OK');
     next();
 });
+
 /**
  * Todo resource
  */

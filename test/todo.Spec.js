@@ -1,4 +1,4 @@
-let Todo = require('../models/todo');
+let Todo = require('../src/models/todo');
 
 // Require the dev-dependencies
 let chai = require('chai');
